@@ -241,7 +241,6 @@ async function charShow(character){
     $("#finished").fadeIn(300);
     let $finLine = `
         <h1 class="endTit">Congrats!</h1><h2>You Won</h2><h2> Character Was <b>${character.name}</b></h2>`;
-    $(".share-section").before($finLine);
     gameState.hasWonToday = true;
     gameState.streak++;
     $("#streakCount").text(gameState.streak);
@@ -252,7 +251,6 @@ async function charShow(character){
     $("body").css("overflow", "hidden");
     let $finLine = `
         <h1 class="endTit">Better luck next time ...</h1><h2>You Ran out of moves</h2><h2> Character Was <b>${todayCharacter.name}</b></h2>`;
-    $(".share-section").before($finLine);
     gameState.hasWonToday = false;
     gameState.streak = 0;
   }
@@ -304,3 +302,4 @@ $(document).ready(function() {
 });
 
       
+

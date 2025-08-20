@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Berserkdle</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script src="scripts/gameSet.js"></script>
+    <script  src="scripts/index.js"></script>
+    <link rel="stylesheet" href="styles/berserkStyle.css">
+</head>
+<body>
+    <nav>
+        <a id="title" href="?"> Berserkdle</a>
+    </nav>
+    <div class="gameSpace"> 
+        <div id="titleCard">
+            <img src="images/berserklogo.webp">
+            <h2 > guess today's berserk character</h2>
+            <div class="game-stats">
+                <div class="stat-box">
+                    <div>Guesses</div>
+                    <div class="statVal" id="guess"></div>
+                </div>
+                <div class="stat-box">
+                    <div>Streak</div>
+                    <div class="statVal" id="streakCount"></div>
+                </div>
+            </div>
+        </div>
+        <div id="giveUp">Give Up</div>
+
+        <div id="gamePlay">
+            <input type="text" id="charInp" value="enter character name..."> 
+            <i class="material-icons" id="submitInp">send</i>
+            <div id="dropdown">
+            </div>
+        </div>
+        
+        <div id="results">
+            <div id="scrollCont">
+                <div id="labelRow">
+                    <div class="itemR"> image </div>
+                    <div class="itemR"> Name </div>
+                    <div class="itemR"> Gender </div>
+                    <div class="itemR"> Hair Color </div>
+                    <div class="itemR"> Weapon </div>
+                    <div class="itemR"> Affiliation </div>
+                    <div class="itemR"> Species</div>
+                    <div class="itemR"> First Arc </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    </div>
+
+    <div id="howTo">
+        <div class="step-header">
+            <div class="step-number">1</div>
+            <h2>Guess a Berserk Character</h2>
+        </div>
+        <p>Enter the name of any character from the Berserk universe in the search box. The game will show you how close your guess is to the secret character.</p>
+        
+        <div class="tip-box">
+            <div class="tip-title">
+                <span class="tip-icon">💡</span>
+                <strong>Tip:</strong>
+            </div>
+            <p>Start with major characters like Guts, Griffith, or Casca. You have 8 attempts to find the correct character!</p>
+        </div>
+
+            <div class="step-header">
+                <div class="step-number">2</div>
+                <h2>Understand the Feedback</h2>
+            </div>
+            <p>After each guess, you'll see how each attribute compares to the secret character:</p>
+            
+            <div class="visual-guide">
+                <img class="samplePlay" src="images/samplePlay.png">
+                <div class="color-key">
+                    <div class="key-item">
+                        <div class="color-box correct-box"></div>
+                        <span>Correct: Attribute matches exactly</span>
+                    </div>
+                    <div class="key-item">
+                        <div class="color-box incorrect-box"></div>
+                        <span>Incorrect: Attribute does not match</span>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="step-header">
+                <div class="step-number">3</div>
+                <h2>Refine Your Next Guess</h2>
+            </div>
+            <p>Based on the feedback, adjust your next guess to get closer to the secret character.</p>
+            
+            <div class="tip-box">
+                <div class="tip-title">
+                    <span class="tip-icon">💡</span>
+                    <strong>Strategy Tip:</strong>
+                </div>
+                <p>If you see multiple green attributes, try characters that share those traits. If you see red attributes, eliminate characters with those traits.</p>
+            </div>
+
+            <div class="step-header">
+                <div class="step-number">4</div>
+                <h2>Attribute Guide</h2>
+            </div>
+            <p>Each character has these attributes that you'll need to match:</p>
+            
+            <div class="attribute-list">
+                <div class="attribute-card">
+                    <div class="attribute-title">Name</div>
+                    <div class="attribute-example">The character's full name or most common name</div>
+                </div>
+                <div class="attribute-card">
+                    <div class="attribute-title">Gender</div>
+                    <div class="attribute-example">Male or Female</div>
+                </div>
+                <div class="attribute-card">
+                    <div class="attribute-title">Hair Colour</div>
+                    <div class="attribute-example">The character's primary hair color</div>
+                </div>
+                <div class="attribute-card">
+                    <div class="attribute-title">Weapon</div>
+                    <div class="attribute-example">Their primary weapon or fighting style</div>
+                </div>
+                <div class="attribute-card">
+                    <div class="attribute-title">Affiliation</div>
+                    <div class="attribute-example">Current or most notable group/organization</div>
+                </div>
+                <div class="attribute-card">
+                    <div class="attribute-title">Species</div>
+                    <div class="attribute-example">Human, Apostle, Elf, etc.</div>
+                </div>
+                <div class="attribute-card">
+                    <div class="attribute-title">Story Arc</div>
+                    <div class="attribute-example">Golden Age, Conviction, Falconia, etc.</div>
+                </div>
+            </div>
+            
+            <div class="tip-box">
+                <div class="tip-title">
+                    <span class="tip-icon">📖</span>
+                    <strong>Note:</strong>
+                </div>
+                <p>All character information is up-to-date with the <b>most recent manga chapter</b>.</p>
+            </div>
+        
+        
+        
+            <div class="step-header">
+                <div class="step-number">5</div>
+                <h2>Win the Game</h2>
+            </div>
+            <p>You win when all attributes in your guess turn green! This means you've correctly identified the secret character.</p>
+            
+            <div class="tip-box">
+                <div class="tip-title">
+                    <span class="tip-icon">🏆</span>
+                    <strong>Daily Challenge:</strong>
+                </div>
+                <p>A new secret character is available each day. Come back tomorrow for a new challenge!</p>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div id="overlay"></div>
+    <div id="finished">
+        <div class="closeBut" id="closeFinished">✕</div>
+        <div class="share-section">
+            <button id="shareBut">
+                Share the game :)
+            </button>
+        </div>
+    </div>
+    
+    <div  id="confirmation">Link copied to clipboard!</div>
+
+    <footer>
+        <p>Berserkdle is a fan-made game not affiliated with Hakusensha or Kentaro Miura</p>
+        <p class="copyright">All Berserk characters and imagery © Kentaro Miura · Hakusensha · Young Animal | <a class="privPol" href="privacyPolicy.html">Privacy Policy</a> | <a class="privPol" href="copyright.html">Copyright Information</a></p>
+    </footer>
+</body>
+
+
+</html>

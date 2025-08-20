@@ -1,0 +1,63 @@
+id,image,name,gender,hairColour,weapon,affiliation,species,arc
+1,guts,Guts,Male,Black,Sword,Gut's Travelling Party,Human,Black Swordsman
+2,griffith,Griffith,Male,White,Sword,Falconia,God Hand,Black Swordsman
+3,casca,Casca,Female,Black,Sword,Gut's Travelling Party,Human,Golden Age
+4,zodd,Nosferatu Zodd,Male,Black,Bare Handed,Falconia,Apostle,Golden Age
+5,judeau,Judeau,Male,Blonde,Throwing Daggers,Band of the Hawk,Human,Golden Age
+6,puck,Puck,Male,Blue,Magic,Gut's Travelling Party,Elf,Black Swordsman
+7,pippin,Pippin,Male,Black,Mace,Band of the Hawk,Human,Golden Age
+8,corkus,Corkus,Male,Black,Sword,Band of the Hawk,Human,Golden Age
+9,rickert,Rickert,Male,Blonde,Sword,Band of the Hawk,Human,Golden Age
+10,gaston,Gaston,Male,Black,Sword,Band of the Hawk,Human,Golden Age
+11,serpico,Serpico,Male,Blonde,Sword,Gut's Travelling Party,Human,Conviction
+12,farnese,Farnese de Vandimon,Female,Blonde,Magic,Gut's Travelling Party,Human,Conviction
+13,isidro,Isidro,Male,Red,Dagger,Gut's Travelling Party,Human,Conviction
+14,schierke,Schierke,Female,Green,Magic,Gut's Travelling Party,Human,Millenium Falcon Arc
+15,ivalera,Ivalera,Female,Pink,None,Gut's Travelling Party,Elf,Millenium Falcon Arc
+16,magnifico,Magnifico de Vandimion,Male,Blonde,Sword,Gut's Travelling Party,Human,Millenium Falcon Arc
+17,roderick,Roderick of schtauffen,Male,Black,Sword,Gut's Travelling Party,Human,Millenium Falcon Arc
+18,isma,Isma,Female,Blue,Bare Handed,Gut's Travelling Party,Human/Merrow,Fantasia
+19,void,Void,Male,None,Magic,God Hand,God Hand,Black Swordsman
+20,slan,Slan,Female,Blue,Magic,God Hand,God Hand,Black Swordsman
+21,ubik,Ubik,Male,None,Magic,God Hand,God Hand,Black Swordsman
+22,conrad,Conrad,Male,None,Magic,God Hand,God Hand,Black Swordsman
+23,grunbeld,Grunbeld,Male,Red,Hammer,Falconia,Apostle,Millenium Falcon Arc
+24,locus,Locus,Male,Black,Lance,Falconia,Apostle,Millenium Falcon Arc
+25,irvine,Irvine,Male,Black,Bow,Falconia,Apostle,Millenium Falcon Arc
+26,rakshas,Rakshas,Male,None,Bare Handed(Blade appendages),Falconia,Apostle,Millenium Falcon Arc
+27,sonia,Sonia,Female,Blonde,None,Falconia,Human,Millenium Falcon Arc
+28,snake,Snake Lord,Male,Black,Bare Handed,None,Apostle,Black Swordsman
+29,count,The Count,Male,None,Bare Handed,None,Apostle,Black Swordsman
+30,wyald,Wyald,Male,Black,Bare Handed,None,Apostle,Golden Age
+31,rosine,Rosine,Female,Blue,Bare Handed,None,Apostle,Golden Age
+32,egg,The Egg of the perfect world,Male,None,Bare Handed,None,Apostle,Conviction
+33,ganishka,Ganishka,Male,Black,Bare Handed,Kushan,Apostle,Millenium Falcon Arc
+34,kingmid,The King of Midland,Male,Black,None,Midland,Human,Golden Age
+36,julius,Julius,Male,Brown,Sword,Midland,Human,Golden Age
+37,queenmid,The Queen of Midland,Female,Brown,None,Midland,Human,Golden Age
+38,foss,Minister Foss,Male,None,None,Midland,Human,Golden Age
+39,laban,Laban,Male,Brown,Sword,Midland,Human,Golden Age
+40,owen,Owen,Male,Blonde,None,Midland,Human,Golden Age
+41,gambino,Gambino,Male,Blonde,Sword,Mercenary Band,Human,Golden Age
+42,skullKnight,The Skull Knight,Male,None,Sword,Gut's Travelling Party,Undead,Golden Age
+43,silat,Silat,Male,Black,Dagger,Kushan,Human,Golden Age
+44,gennon,Gennon,Male,Brown,Sword,Tudor,Human,Golden Age
+45,boscogn,Boscogn,Male,None,Axe,Tudor,Human,Golden Age
+46,moonboy,Moonlight Boy(Demon Child),Male,Black,None,Gut's Travelling Party,Undead,Black Swordsman
+47,jill,Jill,Female,Brown,None,None,Human,Conviction
+48,mozgus,Mozgus,Male,None,Bare Handed,Holy See,Apostle,Conviction
+49,luca,Luca,Female,Brown,None,None,Human,Conviction
+50,pontiff,Pontiff,Male,Gray,None,Holy See,Human,Millenium Falcon Arc
+52,bonebeard,Captain Bonebeard,Male,Black,Sword,None,Undead,Millenium Falcon Arc
+53,daiba,Daiba,Male,Gray,Magic,Kushan,Human,Millenium Falcon Arc
+54,danan,Flower Storm Monarch(Danan),Female,Pink,Magic,Elfhelm,Elf,Fantasia
+56,flora,Flora,Female,Gray,Magic,None,Human,Millenium Falcon Arc
+68,azan,Azan,Male,Black,Staff,Gut's Travelling Party,Human,Conviction
+69,mule,Mule Wolflame,Male,Blonde,Sword,Falconia,Human,Millenium Falcon Arc
+70,gedfring,Gedfring,Male,Gray,Magic,Elfhelm,Human,Fantasia
+71,molda,Molda,Female,Brown,Magic,Elfhelm,Human,Fantasia
+73,zondark,Zondark,Male,Black,Hammer,The Count,Apostle,Black Swordsman
+74,Theresia,Theresia,Female,Black,None,None,Human,Black Swordsman
+75,charlotte,Charlotte,Female,Brown,None,Falconia,Human,Golden Age
+76,anna,Anna,Female,Blonde,None,Falconia,Human,Golden Age
+77,erica,Erica,Female,Light Brown,None,Falconia,Human,Golden Age

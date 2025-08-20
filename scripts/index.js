@@ -301,14 +301,6 @@ $(document).ready(function() {
     $("#charInp").attr("disabled","true");
     $("#giveUp").data("disabled",true);
   });
-  $("#shareBut").click(function(){
-    const conf = $("#confirmation")
-        .removeClass("show")[0];
-    void conf.offsetWidth;
-    conf.classList.add("show");
-    navigator.clipboard.writeText('http://localhost:3000/berserkdle.html');
-    setTimeout(() => conf.classList.remove("show"), 3000);
-    // alert("Copied as link");
-  });
 });
+
       

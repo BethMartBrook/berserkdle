@@ -657,4 +657,174 @@
         .privPol:hover{
            color: #e1dbdb;
         }
+
+        /* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    body {
+        background-position: center center;
+    }
+    
+    nav {
+        padding: 0.8rem 1rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    #title {
+        font-size: 1.8rem;
+        text-shadow: 2px 2px 0 var(--blood-red), 4px 4px 0 rgba(0, 0, 0, 0.7);
+        display: block;
+    }
+    
+    .gameSpace {
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+    
+    #titleCard img {
+        max-width: 250px;
+    }
+    
+    #titleCard h2 {
+        font-size: 1.4rem;
+    }
+    
+    #titleCard h3 {
+        font-size: 1.1rem;
+    }
+    
+    #giveUp {
+        position: relative;
+        top: unset;
+        right: unset;
+        margin: 1rem auto;
+        display: block;
+    }
+    
+    #gamePlay {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #charInp {
+        width: 85%;
+        max-width: 300px;
+        font-size: 1rem;
+        padding: 0.7rem 1rem;
+    }
+    
+    #submitInp {
+        padding: 0.7rem 1.2rem;
+        font-size: 1.4rem;
+        border-left: 2px solid var(--dark-red);
+        margin-top: 10px;
+        width: 85%;
+        max-width: 300px;
+    }
+    
+    #dropdown {
+        width: calc(85% + 22px);
+        max-width: 322px;
+        right: unset;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .game-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    
+    .stat-box {
+        width: 80%;
+        min-width: unset;
+    }
+    
+    #results {
+        margin: 0 auto 50px;
+        padding: 5px;
+        width: 95%;
+    }
+    
+    #labelRow, .charRow {
+        grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px;
+        width: max-content;
+        justify-content: flex-start;
+    }
+    
+    .itemR, .item {
+        font-size: 12px;
+        height: 40px;
+        padding: 3px;
+    }
+    
+    #howTo {
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+    }
+    
+    #howTo h2 {
+        font-size: 1.5rem;
+    }
+    
+    .attribute-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .step-header {
+        margin-left: 0;
+    }
+    
+    .samplePlay {
+        width: 100%;
+    }
+    
+    #finished {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .endTit {
+        font-size: 1.5rem;
+    }
+    
+    .share-section {
+        margin: 30px 0 20px;
+    }
+    
+    #shareBut {
+        font-size: 1.2rem;
+        padding: 8px 16px;
+    }
+    
+    footer {
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
+/* Additional adjustments for very small devices */
+@media screen and (max-width: 480px) {
+    #title {
+        font-size: 1.5rem;
+    }
+    
+    #titleCard img {
+        max-width: 200px;
+    }
+    
+    #labelRow, .charRow {
+        grid-template-columns: 70px 70px 70px 70px 70px 70px 70px 70px;
+    }
+    
+    .itemR, .item {
+        font-size: 11px;
+        height: 35px;
+    }
+    
+    .stat-box {
+        width: 90%;
+    }
+}
         

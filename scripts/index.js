@@ -247,6 +247,7 @@ async function charShow(character){
         <div class="endText">
         <h2>You Won</h2>
         <h2> Character Was <b>${character.name}</b></h2></div></div>`;
+      $(".closeBut").after($finLine);
     gameState.hasWonToday = true;
     gameState.streak++;
     $("#streakCount").text(gameState.streak);
@@ -261,8 +262,8 @@ async function charShow(character){
           <img src="images/${todayCharacter.image}.webp" class="endImg">
           <div class="endText">
           <h2>That's a shame</h2>
-          <h2> Character Was <b>${todayCharacter.name}</b></h2></div>
-          </div>`;
+          <h2> Character Was <b>${todayCharacter.name}</b></h2></div></div>`;
+      $(".closeBut").after($finLine);
     gameState.hasWonToday = false;
     gameState.streak = 0;
   }
@@ -292,7 +293,12 @@ $(document).ready(function() {
       gameState.hasWonToday = false;
       gameState.streak = 0;
       let $finLine = `
-          <h1 class="endTit">You Quit...</h1><h2>That's a shame</h2><h2> Character Was <b>${todayCharacter.name}</b></h2>`;
+          <h1 class="endTit">You Quit...</h1>
+          <div id="endCont">
+          <img src="images/${todayCharacter.image}.webp" class="endImg">
+          <div class="endText">
+          <h2>That's a shame</h2>
+          <h2> Character Was <b>${todayCharacter.name}</b></h2></div></div>`;
      $(".closeBut").after($finLine);
       gameState.guessCount = 8;
     }
@@ -314,6 +320,7 @@ $(document).ready(function() {
 });
 
       
+
 
 
 

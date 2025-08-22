@@ -240,7 +240,12 @@ async function charShow(character){
     $("#overlay").fadeIn(300);
     $("#finished").fadeIn(300);
     let $finLine = `
-        <h1 class="endTit">Congrats!</h1><h2>You Won</h2><h2> Character Was <b>${character.name}</b></h2>`;
+        <h1 class="endTit">Congrats!</h1>
+        <div id="endCont">
+        <img src="images/${todayCharacter.image}.webp" class="endImg"> 
+        <div class="endText">
+        <h2>You Won</h2>
+        <h2> Character Was <b>${character.name}</b></h2></div></div>`;
     gameState.hasWonToday = true;
     gameState.streak++;
     $("#streakCount").text(gameState.streak);
@@ -250,7 +255,13 @@ async function charShow(character){
     $("#finished").fadeIn(300);
     $("body").css("overflow", "hidden");
     let $finLine = `
-        <h1 class="endTit">Better luck next time ...</h1><h2>You Ran out of moves</h2><h2> Character Was <b>${todayCharacter.name}</b></h2>`;
+          <h1 class="endTit">You Quit...</h1>
+          <div id="endCont">
+          <img src="images/${todayCharacter.image}.webp" class="endImg">
+          <div class="endText">
+          <h2>That's a shame</h2>
+          <h2> Character Was <b>${todayCharacter.name}</b></h2></div>
+          </div>`;
     gameState.hasWonToday = false;
     gameState.streak = 0;
   }
@@ -281,7 +292,7 @@ $(document).ready(function() {
       gameState.streak = 0;
       let $finLine = `
           <h1 class="endTit">You Quit...</h1><h2>That's a shame</h2><h2> Character Was <b>${todayCharacter.name}</b></h2>`;
-      $(".share-section").before($finLine);
+     $(".closeBut").after($finLine);
       gameState.guessCount = 8;
     }
     saveGameState();
@@ -302,4 +313,5 @@ $(document).ready(function() {
 });
 
       
+
 

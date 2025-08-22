@@ -57,7 +57,8 @@ id,image,name,gender,hairColour,weapon,affiliation,species,arc
 70,gedfring,Gedfring,Male,Gray,Magic,Elfhelm,Human,Fantasia
 71,molda,Molda,Female,Brown,Magic,Elfhelm,Human,Fantasia
 73,zondark,Zondark,Male,Black,Hammer,The Count,Apostle,Black Swordsman
-74,Theresia,Theresia,Female,Black,None,None,Human,Black Swordsman
+74,theresia,Theresia,Female,Black,None,None,Human,Black Swordsman
 75,charlotte,Charlotte,Female,Brown,None,Falconia,Human,Golden Age
 76,anna,Anna,Female,Blonde,None,Falconia,Human,Golden Age
 77,erica,Erica,Female,Light Brown,None,None,Human,Golden Age
+

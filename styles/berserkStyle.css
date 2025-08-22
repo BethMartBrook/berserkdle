@@ -194,7 +194,6 @@
             background: rgba(42, 42, 42, 0.8);
             border: 2px solid var(--blood-red);
             color: var(--bone);
-            font-family: 'MedievalSharp', cursive;
             font-size: 1.2rem;
             outline: none;
             box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
@@ -819,4 +818,5 @@
     }
 }
         
+
 

@@ -19,12 +19,13 @@ async function initGameState() {
             const parsed = JSON.parse(savedState);
             const today = getLocalDate();
             let yesterday = getLocalDate(1);
-            if (parsed.lastPlayed === today) {
+            const lastPlayed = parsed.lastPlayed;
+            if (lastPlayed === today) {
                 gameState = parsed;
                 todayCharacter = await fetchTodayCharacter();
                 if (gameState.hasWonToday || gameState.guessCount >= 8) {
                     $("#charInp").attr("disabled", "true");
-                    $("#giveUp").prop("disabled",true);
+                    $("#giveUp").data("disabled",true);
                     $("#overlay").fadeIn(300);
                     $("#finished").fadeIn(300);
                     $("#finished").html('<div class="closeBut" id="closeFinished">✕</div><h1 class="endTit">You\'ve played today,</h1><h2>Please come back tomorrow</h2>');
@@ -33,10 +34,7 @@ async function initGameState() {
                 gameState.guesses.forEach(guess => {
                 displayed(guess);  
                 });
-            } else if(parsed.lastPlayed > yesterday){
-              console.log("missed a day :3");
-              createNewGameState();
-            }else {
+            } else if(lastPlayed === yesterday){
                 gameState = {
                     streak: parsed.streak,
                     lastPlayed: today,
@@ -45,6 +43,9 @@ async function initGameState() {
                     guesses: []
                 };
                 saveGameState();
+            }else {
+                console.log("missed a day :3");
+                createNewGameState();
             }
             
         } catch (e) {
@@ -313,5 +314,6 @@ $(document).ready(function() {
 });
 
       
+
 
 

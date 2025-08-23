@@ -5,13 +5,6 @@ let dailyCharCache = {
 };
 let readyPromise;
 
-function simpleHash(str) {
-  let hash = 0;
-  for (let i = 0; i < str.length; i++) {
-    hash = (hash * 31 + str.charCodeAt(i)) >>> 0; 
-  }
-  return hash;
-}
 
 async function loadChars(){
   try{
@@ -69,7 +62,7 @@ window.characterAPI = {
         return dailyCharCache.character;
     }
     const count = characters.length;
-    const index = simpleHash(seed)%count;
+    const index = seed%count;
     dailyCharCache = {
       date: today,
       character: characters[index]
@@ -85,5 +78,6 @@ window.characterAPI = {
     const searchTerm = name.toLowerCase().trim();
     return characters.filter(char => char.name.toLowerCase().includes(searchTerm));
   }
+
 
 }

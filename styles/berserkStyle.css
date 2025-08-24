@@ -738,29 +738,26 @@
     }
     
     #labelRow,.charRow{
-            text-align: center;
-            justify-content: center;
             display: grid;
-            grid-template-columns: 
-                minmax(80px, 1fr) 
-                minmax(80px, 1fr) 
-                minmax(80px, 1fr) 
-                minmax(80px, 1fr) 
-                minmax(80px, 1fr) 
-                minmax(80px, 1fr) 
-                minmax(80px, 1fr) 
-                minmax(80px, 1fr);
-            gap: 5px;
-            min-width: min-content;
-            width: 100%;
-            align-items: center;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
         }
-    
-    .itemR, .item {
-        font-size: 12px;
-        height: 40px;
-        padding: 3px;
-    }
+
+.itemR{
+            height: 40px;
+            padding: 3px;
+            font-size: clamp(12px, 4vw, 16px);
+        }
+
+        .item{
+            padding: 2px;
+            font-size: clamp(12px, 4vw, 16px);
+            gap:2px;
+        }
     
     #howTo {
         padding: 1.5rem;
@@ -837,6 +834,7 @@
     }
 }
         
+
 
 
 

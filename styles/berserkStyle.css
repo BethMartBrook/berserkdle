@@ -747,17 +747,21 @@
 
         }
 
-.itemR{
-            height: 35px;
-            padding: 3px;
-            font-size: clamp(11px, 4vw, 15px);
-        }
+.itemR,
+  .item {
+    /* match the 50px height from .itemR on desktop */
+    height: 50px;
+    min-width: 0;
+    padding: 5px;
+    font-size: clamp(12px, 4vw, 16px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
-        .item{
-            padding: 2px;
-            font-size: clamp(11px, 4vw, 15px);
-            gap:2px;
-        }
+    /* cancel the square aspect-ratio on characters */
+    aspect-ratio: auto;
+  }
+
     
     #howTo {
         padding: 1.5rem;
@@ -851,6 +855,7 @@
     }
 }
         
+
 
 
 

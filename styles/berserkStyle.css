@@ -738,9 +738,9 @@
     }
     
     #labelRow,.charRow{
-            display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 2px;
+           display: grid;
+    grid-template-columns: repeat(8, auto);
+    gap: 5px;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -749,17 +749,19 @@
 
 .itemR,
   .item {
-    /* match the 50px height from .itemR on desktop */
-    height: 50px;
-    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     padding: 5px;
     font-size: clamp(12px, 4vw, 16px);
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-
-    /* cancel the square aspect-ratio on characters */
-    aspect-ratio: auto;
+    background: linear-gradient(135deg, #1b1b1d 0%, #2c2c2e 100%);
+    border-radius: 10px;
+    min-width: 0;
+    height: auto;
+    white-space: normal;
+    word-break: break-word; 
+    overflow-wrap: anywhere; 
+    text-overflow: clip;  
   }
 
     
@@ -855,6 +857,7 @@
     }
 }
         
+
 
 
 

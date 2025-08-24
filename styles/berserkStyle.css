@@ -738,7 +738,7 @@
     }
     
     #labelRow,.charRow{
-           display: grid;
+    display: grid;
     grid-template-columns: repeat(8, auto);
     gap: 5px;
     align-items: center;
@@ -754,7 +754,6 @@
     justify-content: flex-start;
     padding: 5px;
     font-size: clamp(12px, 4vw, 16px);
-    background: linear-gradient(135deg, #1b1b1d 0%, #2c2c2e 100%);
     border-radius: 10px;
     min-width: 0;
     height: auto;
@@ -810,53 +809,47 @@
     #titleCard img {
         max-width: 200px;
     }
+
     
-    #labelRow,.charRow{
-            text-align: center;
-            justify-content: center;
-            display: grid;
-            grid-template-columns: 
-                minmax(70px, 1fr) 
-                minmax(70px, 1fr) 
-                minmax(70px, 1fr) 
-                minmax(70px, 1fr) 
-                minmax(70px, 1fr) 
-                minmax(70px, 1fr) 
-                minmax(70px, 1fr) 
-                minmax(70px, 1fr);
-            gap: 5px;
-            min-width: min-content;
-            width: 100%;
-            align-items: center;
-        }
-    
-    #labelRow,.charRow{
-            display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 5px;
-    align-items: center;
+  #labelRow,
+  .charRow {
+    display: grid;
+    grid-template-columns: repeat(
+      8,
+      minmax(4rem, 1fr) 
+    );
+    gap: 4px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+  }
+  .itemR {
+    height: 36px;
+    padding: 3px;
+    font-size: clamp(10px, 2.5vw, 14px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+            
+  .item {
+    padding: 3px;
+    font-size: clamp(10px, 2.5vw, 14px);
+    aspect-ratio: 1 / 1;
+    gap: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 
-        }
-
-.itemR{
-            height: 40px;
-            padding: 3px;
-            font-size: clamp(12px, 4vw, 16px);
-        }
-
-        .item{
-            padding: 2px;
-            font-size: clamp(12px, 4vw, 16px);
-            gap:2px;
-        }
     
     .stat-box {
         width: 90%;
     }
 }
         
+
 
 
 

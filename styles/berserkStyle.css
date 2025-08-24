@@ -739,8 +739,8 @@
     
     #labelRow,.charRow{
             display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 5px;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -748,14 +748,14 @@
         }
 
 .itemR{
-            height: 40px;
+            height: 35px;
             padding: 3px;
-            font-size: clamp(12px, 4vw, 16px);
+            font-size: clamp(11px, 4vw, 15px);
         }
 
         .item{
             padding: 2px;
-            font-size: clamp(12px, 4vw, 16px);
+            font-size: clamp(11px, 4vw, 15px);
             gap:2px;
         }
     
@@ -824,16 +824,34 @@
             align-items: center;
         }
     
-    .itemR, .item {
-        font-size: 11px;
-        height: 35px;
-    }
+    #labelRow,.charRow{
+            display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+        }
+
+.itemR{
+            height: 40px;
+            padding: 3px;
+            font-size: clamp(12px, 4vw, 16px);
+        }
+
+        .item{
+            padding: 2px;
+            font-size: clamp(12px, 4vw, 16px);
+            gap:2px;
+        }
     
     .stat-box {
         width: 90%;
     }
 }
         
+
 
 
 

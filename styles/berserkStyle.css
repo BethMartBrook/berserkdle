@@ -811,7 +811,7 @@
     }
 
     
-  #labelRow,
+/*   #labelRow,
   .charRow {
     display: grid;
     grid-template-columns: repeat(
@@ -847,13 +847,49 @@
     
     text-overflow: ellipsis;
   }
+ */
+             #labelRow,.charRow{
+            display: grid;
+            grid-template-columns: 
+                minmax(80px, 1fr) 
+                minmax(80px, 1fr) 
+                minmax(80px, 1fr) 
+                minmax(80px, 1fr) 
+                minmax(80px, 1fr) 
+                minmax(80px, 1fr) 
+                minmax(80px, 1fr) 
+                minmax(80px, 1fr);
+            gap: 4px;
+            min-width: min-content;
+            width: 100%;
+            align-items: center;
+        }
 
+
+        .itemR{
+            border-radius: 5px;
+            height: 30px;
+            padding: 3px;
+            font-size: clamp(10px, 1.2vw, 15px);
+            min-width: 0; 
+        }
+
+        .item{
+            border-radius: 5px;
+            padding: 3px;
+            font-size: clamp(10px, 1.2vw, 15px);
+            aspect-ratio: 1 / 1;
+            height: auto;
+            gap:2px;
+            text-wrap:inherit;
+        }
     
     .stat-box {
         width: 90%;
     }
 }
         
+
 
 
 

@@ -824,7 +824,8 @@
             gap: 4px;
             min-width: min-content;
             width: 100%;
-            align-items: center;
+            justify-items: center;     /* ← add this */
+            align-items: center; 
         }
 
 
@@ -837,10 +838,14 @@
         }
 
         .item{
+            display: flex;               /* ensure it stays a flex container */
+            justify-content: center;     /* horizontal centering */
+            align-items: center;         /* vertical centering */
+            text-align: center;   
             border-radius: 5px;
             padding: 3px;
             font-size: clamp(10px, 1.2vw, 15px);
-            aspect-ratio: 14 / 7;
+            aspect-ratio: 7 / 3;
             height: auto;
             gap:2px;
             text-wrap:inherit;
@@ -851,6 +856,7 @@
     }
 }
         
+
 
 
 
